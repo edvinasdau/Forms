@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>JS Order</h1>
+				<hr>
+				<input type="checkbox" class="form-check-input" id="cb_veg">Rodyti tik vegetariskus patiekalus
+				<hr>
+			</div>
+		</div>
+		<div class="row"><h2>Pirmi patiekalai</h2></div>
+		<div class="row">
+			<div class="col">
+				<div class="row">
+					<div class="checkbox">
+						<label class="form-check-label">
+							<input checked type="checkbox" class="form-check-input" id="sriubos">Sriubos
+						</label>
+					</div>
+				</div>
+				<div class="row" id="div_sriubos">
+					<select class="form-control" id="sriubu_sarasas">
+						<option veg="false">Zuviene</option>
+						<option veg="true">Darzoviu</option>
+						<option veg="true">Kopustu</option>
+						<option veg="false">Barsciai</option>
+					</select>
+				</div>					
+			</div>
+			<div class="col">
+				<div class="row">
+					<div class="checkbox">
+						<label class="form-check-label">
+							<input checked type="checkbox" class="form-check-input" id="salotos">Salotos
+						</label>
+					</div>
+				</div>
+				<div class="row" id="div_salotos">
+					<select class="form-control" id="salotu_sarasas">
+						<option veg="false">cezario</option>
+						<option veg="true">vegetariskos</option>
+						<option veg="false">su kumpiu</option>
+						<option veg="true">kopustu</option>
+					</select>
+				</div>					
+			</div>
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
