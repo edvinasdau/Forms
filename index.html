@@ -28,12 +28,12 @@
 					</div>
 				</div>
 				<div class="row" id="div_sriubos">
-					<select class="form-control" id="sriubu_sarasas">
-						<option veg="false">Zuviene</option>
-						<option veg="true">Darzoviu</option>
-						<option veg="true">Kopustu</option>
-						<option veg="false">Barsciai</option>
-					</select>
+						<select class="form-control" id="sriubu_sarasas">
+							<option veg="false">Zuviene</option>
+							<option veg="true">Darzoviu</option>
+							<option veg="true">Kopustu</option>
+							<option veg="false">Barsciai</option>
+						</select>
 				</div>					
 			</div>
 			<div class="col">
@@ -54,8 +54,34 @@
 				</div>					
 			</div>
 		</div>
+		<div class="row"><h2>Antri patiekalai</h2></div>
+			<div class="row">
+			 	<div class="col">
+				 	<div class="row">
+					 	 <div class="checkbox">
+							<label class="form-check-label">	
+								<input  type="checkbox" class="form-check-input" id="cb_koser">Koserinis
+							</label>
+							<label class="form-check-label">	
+								<input  type="checkbox" class="form-check-input" id="cb_gliuten">Be gliuteno
+							</label>
+						</div><hr>
+					</div>	
+				</div>		
+			 	<div class="col" id="div_antri">
+			 		 <div class="row">
+			 	 		<select class="form-control" id="antru_sarasas">
+							<option veg="true" koser="false" gliuten="false">1 vegetariskas patiekalas</option>
+							<option veg="false" koser="false" gliuten="true">2 patiekalas be gliuteno</option>
+							<option veg="false" koser="true" gliuten="false">3 patiekalas koserinis</option>
+							<option veg="false" koser="false" gliuten="false">4 patiekalas</option>
+						</select>
+					</div>
+			 	</div>
+			</div>	
 	</div>
-</div>
 <script src="script.js"></script>
 </body>
 </html>
+
+

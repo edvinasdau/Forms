@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parduotuve</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="row"><h1>Moketojo adresas</h1></div>
+	<div class="row">
+		<button class="btn btn-danger" onclick="fiz()"  type="button" id="fizinis">Perka fizinis asmuo</button>
+		<button class="btn btn-danger" onclick="im()" type="button" id="imone">Perka imone</button>
+	</div>	
+	<div class="row">
+		<div class="col">
+
+			<form id="fiz">
+			    <div class="form-group">
+			      	<label >*Vardas</label>
+			      	<input type="text" class="form-control" id="user">
+			    </div>
+			    <div class="form-group">
+			      	<label>*El. pašto adresas</label>
+			      	<input type="text" class="form-control" id="email">
+			    </div>
+			    <div class="form-group">
+			      	<label>*Miestas</label>
+			      	<input type="text" class="form-control" id="city">
+			    </div>
+			    <div class="form-group">
+			      	<label>*pašto kodas</label>
+			      	<input type="text" class="form-control" id="post">
+			    </div>
+			    <div class="form-group">
+			      	<label>*Telefonas</label>
+			      	<input type="text" class="form-control" id="tel">
+			    </div>
+			</form>
+			
+
+			  <form id="im" style="display: none;">
+			    <div class="form-group">
+			      	<label >*Vardas</label>
+			      	<input type="text" class="form-control" id="user">
+			    </div>
+			    <div class="form-group">
+			      	<label >Įmonės pavadinimas</label>
+			      	<input type="text" class="form-control" id="impav">
+			    </div>
+			    <div class="form-group">
+			      	<label >Įmonės kodas</label>
+			      	<input type="text" class="form-control" id="imkod">
+			    </div>
+			    <div class="form-group">
+			      	<label>PVM kodas</label>
+			      	<input type="text" class="form-control" id="pvmkod">
+			    </div>
+			    <div class="form-group">
+			      	<label>*El. pašto adresas</label>
+			      	<input type="text" class="form-control" id="email">
+			    </div>
+			    <div class="form-group">
+			      	<label>*Miestas</label>
+			      	<input type="text" class="form-control" id="city">
+			    </div>
+			    <div class="form-group">
+			      	<label>*pašto kodas</label>
+			      	<input type="text" class="form-control" id="post">
+			    </div>
+			    <div class="form-group">
+			      	<label>*Telefonas</label>
+			      	<input type="text" class="form-control" id="tel">
+			    </div>
+			</form>
+			<form>
+				<div class="form-group">
+			    	<input type="checkbox" class="form-check-input" id="account">   Sukurti vartotoją
+			    </div>
+			</form>	
+		</div>
+		<div class="col">
+			<form>
+				<div class="form-group">
+			      	<label>*Pavardė</label>
+			      	<input type="text" class="form-control" id="userp">
+			    </div>
+			    <div class="form-group">
+			      	<label>*Adresas</label>
+			      	<input type="text" class="form-control" id="adr">
+			    </div>
+			    
+			    <div class="form-group">Rajonas
+			      	<select class="form-control" id="raj">
+							<option >Alytaus apskritis</option>
+							<option >Vilniaus apskritis</option>
+							<option >Klaipedos apskritis</option>
+						</select>
+			    </div>
+			    <div class="form-group">*Šalis
+			      	<select class="form-control" id="raj">
+						<option >Lietuva</option>
+						<option >Latvija</option>
+						<option >Estija</option>
+					</select>
+			    </div>	    
+			</form>
+		</div>
+	</div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
