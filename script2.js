@@ -28,17 +28,16 @@ function kitu() {
 	document.getElementById("pristatymas").style.display = "block";
 }
 
-// rb_pristn = document.getElementById("namo");
-// rb_pristk = document.getElementById("kitur");
 
-// rb_pristn.addEventListener("change", function(){
-// 	if (rb_pristn.checked) {
-// 		document.getElementById("pristatymas").style.display = "block";
-// 	} else {
-// 		document.getElementById("pristatymas").style.display = "none";
-// 	}
-
-// 	if (rb_pristk.checked) { 
-// 		document.getElementById("pristatymas").style.display = "none";
-// 	}	
-// })
+ input_email = document.getElementById("myEmail");
+ input_email.addEventListener("keyup", function(){
+var status = false;     
+var emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+     if (document.myform.email.value.search(emailRegEx) == -1) {
+          console.log("Please enter a valid email address."); //reiketu pasidaryti kad tikrintu emaila kai paspaudziamas mygtukas registracijai
+     }  else {
+          //alert("Woohoo!  The email address is in the correct format and they are the same.");
+          status = true;
+     }
+     return status;  
+})

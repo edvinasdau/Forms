@@ -16,14 +16,14 @@
 		<div class="row">
 			<div class="col">
 
-				<form id="fiz">
+				<form id="fiz" name="myform">
 					<div class="form-group">
 						<label >*Vardas</label>
 						<input type="text" class="form-control" id="user">
 					</div>
 					<div class="form-group">
 						<label>*El. pašto adresas</label>
-						<input type="text" class="form-control" id="email">
+						<input class="form-control" type="txt" id="myEmail" name="email" >
 					</div>
 					<div class="form-group">
 						<label>*Miestas</label>
@@ -92,7 +92,7 @@
 					<input type="radio" onchange="namai()" name="siuntimas" id="namo" checked>Pristatymas į tą patį adresą<br>
 					<input type="radio" onchange="kitu()" name="siuntimas" id="kitur">Siųsti prekes kitu adresu
 				</form>
-				 <div class="col" id="pristatymas">
+				 <div class="col" id="pristatymas" style="display: none;">
 					<div class="row">
 						<div class="col">
 							<form>
